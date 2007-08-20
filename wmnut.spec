@@ -98,5 +98,5 @@ rm -rf %buildroot
 %{_datadir}/applications/mandriva-%{name}.desktop
 %_menudir/wmnut*
 %_iconsdir/*
-%_mandir/man1/wmnut.1.bz2
+%_mandir/man1/wmnut.*
 
