@@ -14,7 +14,6 @@ Patch0:         wmnut-0.62-lib64.patch
 Group:			Graphical desktop/WindowMaker
 BuildRequires:		nut-devel >= 2.0.0
 BuildRequires:		libx11-devel
-BuildRoot: 		%{_tmppath}/%{name}-%{version}-buildroot
 
 %description
 A wmaker dock app that displays UPS statistics from NUT's upsd.
