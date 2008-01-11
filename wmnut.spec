@@ -45,13 +45,6 @@ install -D -m 644 icons/%{name}-mdk-16.png %buildroot%{_miconsdir}/%{name}.png
 install -D -m 644 icons/%{name}-mdk-32.png %buildroot%{_iconsdir}/%{name}.png
 install -D -m 644 icons/%{name}-mdk-48.png %buildroot%{_liconsdir}/%{name}.png
 
-install -m 755 -d %buildroot%{_menudir}
-cat << EOF > %buildroot%{_menudir}/%{name}
-?package(%{name}):command="%{_bindir}/%{name}" icon="%{name}.png"\\
-                  needs="wmaker" section="Applications/Monitoring" \\
-                  title="WMNut" longtitle="UPS monitoring in a dockapp" \\
-                  xdg="true"
-EOF
 
 mkdir -p $RPM_BUILD_ROOT%{_datadir}/applications
 cat > $RPM_BUILD_ROOT%{_datadir}/applications/mandriva-%{name}.desktop << EOF
@@ -66,19 +59,7 @@ StartupNotify=true
 Categories=X-MandrivaLinux-System-Monitoring;
 EOF
 
-cat << EOF > %buildroot%{_menudir}/%{name}-kde
-?package(%{name}):command="%{_bindir}/%{name} -w" icon="%{name}.png"\\
-                  needs="kde" section="Applications/Monitoring" \\
-                  title="WMNut" longtitle="UPS monitoring in a dockapp" \\
-                  xdg="true"
-EOF
 
-cat << EOF > %buildroot%{_menudir}/%{name}-gnome
-?package(%{name}):command="%{_bindir}/%{name} -w" icon="%{name}.png"\\
-                  needs="gnome" section="Applications/Monitoring" \\
-                  title="WMNut" longtitle="UPS monitoring in a dockapp" \\
-                  xdg="true"
-EOF
 
 
 
@@ -96,7 +77,6 @@ rm -rf %buildroot
 %doc AUTHORS BUGS ChangeLog COPYING INSTALL NEWS README TODO
 %_bindir/wmnut
 %{_datadir}/applications/mandriva-%{name}.desktop
-%_menudir/wmnut*
 %_iconsdir/*
 %_mandir/man1/wmnut.*
 
