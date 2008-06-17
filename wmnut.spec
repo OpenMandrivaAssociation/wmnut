@@ -1,6 +1,6 @@
 %define name 		wmnut
 %define version 	0.62
-%define release %mkrel 2
+%define release %mkrel 3
 %define summary		A wmaker dock app that displays UPS statistics from NUT's upsd
 
 Name: 			%{name}
@@ -13,7 +13,7 @@ Source: 		http://wmnut.mgeups.org/files/%{name}-%{version}.tar.bz2
 Patch0:         wmnut-0.62-lib64.patch
 Group:			Graphical desktop/WindowMaker
 BuildRequires:		nut-devel >= 2.0.0
-BuildRequires:		libx11-devel
+BuildRequires:		libx11-devel libxext-devel
 BuildRoot: 		%{_tmppath}/%{name}-%{version}-buildroot
 
 %description
