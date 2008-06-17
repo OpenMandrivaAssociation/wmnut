@@ -13,7 +13,7 @@ Source: 		http://wmnut.mgeups.org/files/%{name}-%{version}.tar.bz2
 Patch0:         wmnut-0.62-lib64.patch
 Group:			Graphical desktop/WindowMaker
 BuildRequires:		nut-devel >= 2.0.0
-BuildRequires:		libx11-devel libxext-devel
+BuildRequires:		libx11-devel libxext-devel libxml2-devel
 BuildRoot: 		%{_tmppath}/%{name}-%{version}-buildroot
 
 %description
