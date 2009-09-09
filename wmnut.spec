@@ -1,6 +1,6 @@
 %define name 		wmnut
 %define version 	0.62
-%define release %mkrel 3
+%define release %mkrel 4
 %define summary		A wmaker dock app that displays UPS statistics from NUT's upsd
 
 Name: 			%{name}
