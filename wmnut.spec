@@ -8,7 +8,7 @@ Summary: 		%{summary}
 Version: 		%{version}
 Release: 		%{release}
 License:		GPL
-URL:			http://osx.freshmeat.net/projects/wmnut/
+URL:			https://osx.freshmeat.net/projects/wmnut/
 Source: 		http://wmnut.mgeups.org/files/%{name}-%{version}.tar.bz2
 Patch0:         wmnut-0.62-lib64.patch
 Group:			Graphical desktop/WindowMaker
