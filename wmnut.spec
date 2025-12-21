@@ -12,6 +12,11 @@ URL:			https://osx.freshmeat.net/projects/wmnut/
 Source: 		http://wmnut.mgeups.org/files/%{name}-%{version}.tar.bz2
 Patch0:         wmnut-0.62-lib64.patch
 Group:			Graphical desktop/WindowMaker
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:		nut-devel >= 2.0.0
 BuildRequires:		libx11-devel libxext-devel libxml2-devel xpm-devel
 BuildRoot: 		%{_tmppath}/%{name}-%{version}-buildroot
